@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GigFloww</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">GigFloww</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li class="dropdown">
+        <a href="#">Services</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <h1>Your Creative Gig Journey Starts Here</h1>
+    <p>Empowering freelancers to connect, grow, and thrive.</p>
+    <a href="#signup" class="btn btn-primary">Join Now</a>
+  </header>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About GigFloww</h2>
+    <p>GigFloww is built to uplift creators and gig workers through curated opportunities, real-time feedback, and a strong community.</p>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-box">
+      <h3>🎯 Personalized Gigs</h3>
+      <p>Get job matches tailored to your skills and experience.</p>
+    </div>
+    <div class="feature-box">
+      <h3>💼 Showcase Portfolio</h3>
+      <p>Create a stunning profile with your best works.</p>
+    </div>
+    <div class="feature-box">
+      <h3>📈 Analytics Dashboard</h3>
+      <p>Track your earnings and performance metrics.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🤝 Community Support</h3>
+      <p>Engage with fellow freelancers and grow together.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">“GigFloww helped me land my first international client!” – Aditi, Designer</div>
+        <div class="swiper-slide">“The analytics feature is game-changing.” – Rohan, Developer</div>
+        <div class="swiper-slide">“Highly recommended for every freelancer!” – Sara, Marketer</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Sign-Up Form -->
+  <section class="signup" id="signup">
+    <h2>Join GigFloww</h2>
+    <form id="signupForm">
+      <input type="text" placeholder="Your Name" name="name" required />
+      <input type="email" placeholder="Email Address" name="email" required />
+      <input type="text" placeholder="Skill Category (e.g., Design, Web Dev)" name="skill" required />
+      <input type="url" placeholder="Portfolio Link" name="portfolio" required />
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <p id="thankYouMsg" class="thank-you"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 GigFloww. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
